@@ -1,0 +1,278 @@
+:root {
+    --1---Blue: #0A327B;
+    --2---Red: #F65552;
+    --3---Very-Dark-Grey-Blue: #1C202B;
+    --5---Grey-Blue: #939CAD;
+    --7---Very-Light-Grey-Blue: #DDE7EE;
+    --8---Snow: #F7FAFD;
+    --9---White: #FFF;
+}
+
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--8---Snow, #F7FAFD);
+
+}
+
+#notifications-page {
+
+    margin-top: 63px;
+    margin-bottom: 89px;
+
+}
+
+
+
+.container-fluid {
+    width: 730px;
+    height: 839px;
+    font-size: 16px;
+    border-radius: 15px;
+    background: var(--9---White, #FFF);
+    box-shadow: 0px 20px 60px 0px rgba(73, 97, 168, 0.05);
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0;
+
+
+}
+
+/*NOTIFICATIONS BAR*/
+
+.notifications-bar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    gap: 10px;
+    padding-left: 32px;
+}
+
+
+
+.number-box {
+    width: 32px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--1---Blue, #0A327B);
+    color: var(--9---White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.buttonMark {
+    margin-left: 346px;
+    color: var(--4---Dark-Grey-Blue, #5E6778);
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+/*NOTIFICATIONS SECTION*/
+
+.notifications-reactions {
+    width: 670px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: flex;
+    margin: 0 30px 8px;
+
+
+}
+
+.unread {
+    background: var(--8---Snow, #F7FAFD);
+}
+
+.red-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    margin-left: 4px;
+}
+
+.name {
+    color: var(--3---Very-Dark-Grey-Blue, #1C202B);
+    margin-right: 6px;
+}
+
+.likedPost {
+    margin-left: 6px;
+}
+
+.reaction-time {
+    color: var(--5---Grey-Blue, #939CAD);
+}
+
+.chessClub {
+    color: var(--1---Blue, #0A327B);
+
+}
+
+
+.btnLink,
+.liked-pic,
+#private-message:hover {
+    cursor: pointer;
+}
+
+
+/*ACTIVITY*/
+
+.reaction-activity {
+    width: 558px;
+    height: 45px;
+    margin-top: 18px;
+}
+
+p {
+    margin: 0;
+}
+
+.likedPost {
+    color: var(--4---Dark-Grey-Blue, #5E6778);
+
+}
+
+.title,
+.likedPost,
+.chessClub {
+    font-weight: 800;
+
+}
+
+
+.message-notification {
+    width: 670px;
+    height: 192px;
+    flex-shrink: 0;
+}
+
+#private-message {
+    width: 566px;
+    height: 97px;
+    margin-top: 13px;
+    border-radius: 5px;
+    border: 1px solid var(--7---Very-Light-Grey-Blue, #DDE7EE);
+    background: var(--9---White, #FFF);
+}
+
+.message {
+    color: var(--4---Dark-Grey-Blue, #5E6778);
+    font-feature-settings: 'clig' off, 'liga' off;
+    padding: 17px 20px 20px;
+
+    line-height: normal;
+
+
+}
+
+img.liked-pic {
+    border-radius: 0;
+
+}
+
+.profile-picture {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 18px;
+    margin-right: 19px;
+    margin-left: 20px;
+}
+
+/*FOOTER*/
+#footer-section {
+    width: 300px;
+    height: 30px;
+
+
+}
+
+
+@media (max-width:375px) {
+
+    .container-fluid {
+        width: 375px;
+        height: 901px;
+        font-size:14px;
+    }
+
+    .notifications-reactions {
+        width: 343px;
+        height: 89px;
+        flex-shrink: 0;
+        margin: 0 16px 10px;
+        
+    }
+
+    #notifications-page{
+        margin : 0;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .notifications-bar{
+        height: 25px;
+        padding: 34px 16px;
+    }
+
+    .buttonMark{
+        width: 201px;
+        margin-left: 4px;
+    }
+
+    .message-notification {
+        width: 343px;
+        height: 228px;
+    }
+
+    .profile-picture {
+        width: 39px;
+        height: 39px;
+        flex-shrink: 0;
+        margin-left: 16px;
+    }
+
+    .reaction-activity{
+        width: 263px;
+height: 191px;
+flex-shrink: 0;
+    }
+
+    .reaction-pic{
+        width: 205px;
+height: 57px;
+flex-shrink: 0;
+    }
+
+    #private-message{
+        width: 263px;
+height: 122px;
+flex-shrink: 0;
+padding: 16px;
+    }
+
+    .message{
+        width: 231px;
+        padding: 0;
+    }
+
+}

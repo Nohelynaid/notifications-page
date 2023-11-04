@@ -277,3 +277,12 @@ padding: 16px;
     }
 
 }
+
+@media (max-width:1520px) and (min-width:902px){
+
+    #notifications-page{
+        margin-top: 0;
+    }
+    
+}
+
